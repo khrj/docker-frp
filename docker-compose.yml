@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+    frp:
+        build: .
+        restart: always
+        ports:
+            - "7000:7000"
+            - "9888:9888"
+        environment:
+            version: 0.45.0
+            arch: ${arch}
