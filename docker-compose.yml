@@ -9,6 +9,5 @@ services:
             - "9888:9888"
         environment:
             version: 0.45.0
-            arch: ${arch}
         volumes:
             -  ./frps.ini:/frps.ini
