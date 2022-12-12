@@ -9,6 +9,6 @@ RUN apk add --no-cache curl \
 	&& rm frp.tar.gz \
 	&& mv frp_*_linux_*/frps .
 
-COPY ./frps.ini .
+VOLUME /frps.ini
 
-CMD ["./frps", "-c", "frps.ini"]
+CMD ["./frps", "-c", "/frps.ini"]
