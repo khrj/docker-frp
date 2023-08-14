@@ -10,7 +10,7 @@
 			in {
 				devShell = pkgs.mkShell {
 					buildInputs = with pkgs; [
-						nodejs-19_x
+						nodejs_20
 					];
 				};
 			}

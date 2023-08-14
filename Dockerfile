@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV version=0.45.0
+ENV version=0.51.3
 
 RUN apk add --no-cache curl \
 	&& if [ $(apk --print-arch) == "aarch64" ]; then arch=arm64; else arch=amd64; fi \
